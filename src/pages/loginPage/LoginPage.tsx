@@ -18,11 +18,12 @@ export const LoginPage = () => {
                 <input type="text" placeholder='Пароль' className='regist__input' />
                 <button type='submit' className='regist__button'>Увійти</button>
                 <p className='login__link' onClick={() => setRemember(false)}>Забули пароль?</p>
-
+                <div className='forgot__link'>
+                <p className='regist__link'>В мене немає аккаунту.</p>
                 <NavLink to='/signup' className='regist__link'>
-                  <p>В мене немає аккаунту.</p>
                   <p className='regist__link login__link__style'>Зареєструватися</p>
                 </NavLink>
+                </div>
               </form>
             </div>
 

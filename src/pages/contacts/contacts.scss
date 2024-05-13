@@ -1,0 +1,66 @@
+.contacts__border{
+    max-width: 1440px;
+    display: flex;
+    box-sizing: border-box;
+    border-top: 1px solid #FAC310;
+    margin: 0 auto;
+    
+}
+
+
+.contacts {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 40px 0px 196px 100px;
+}
+
+.contacts__map{
+    width: 50%;
+}
+
+.contacts__title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 40px;
+}
+
+.contacts__text {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 16px;
+    margin-bottom: 20px;
+}
+
+.contacts__description {
+
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    margin-bottom: 16px;
+}
+
+.contacts__item{
+    padding-bottom: 16px;
+}
+
+.contacts__link{
+    display: flex;
+    gap: 32px;
+    margin-bottom: 40px;
+}
+
+.instagram__link{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    gap: 8px;
+}
+
+.contacts__cafe{
+    display: flex;
+    gap: 40px;
+}
