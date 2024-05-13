@@ -1,26 +1,47 @@
 import React from 'react';
 import { HashRouter, Route, Routes } from 'react-router-dom';
 import { App } from './App.tsx';
+import { NotFoundPage } from './pages/NotFoundPage/NotFoundPage.tsx';
+import { MainPage } from './pages/mainPage/MainPage.tsx';
+import { LoginPage } from './pages/loginPage/LoginPage.tsx';
+import { RegisterPage } from './pages/registerPage/RegisterPage.tsx';
+import { ProductCatalog } from './pages/productCatalog/ProductCatalog.tsx';
+import { Itempage } from './pages/itemPage/ItemPage.tsx';
+import { WorkWithUs } from './pages/workWithUs/WorkWithUs.tsx';
+import { Contacts } from './pages/contacts/Contacts.tsx';
+import { CartPage } from './pages/cart/CartPage.tsx';
 
 export const Root: React.FC = () => (
   <HashRouter>
     <Routes>
       <Route path="/" element={<App />}>
-        {/* <Route index element={<Landing />} />
+        <Route index element={<MainPage />} />
         <Route path="signin" element={<LoginPage />} />
         <Route path="signup" element={<RegisterPage />} />
 
-        <Route path="main-page">
-          <Route index element={<CatalogPage />} />
-          <Route path=":itemId" element={<MainPage />} />
+        <Route path="cakes">
+          <Route index element={<ProductCatalog />} />
+          <Route path=":cakeId" element={<Itempage />} />
         </Route>
 
-        <Route path="diet" element={<DietPage />} />
+        <Route path="bakery">
+          <Route index element={<ProductCatalog />} />
+          <Route path=":bakeId" element={<Itempage />} />
+        </Route>
 
-        <Route path="about-us" element={<AboutUs />} /> */}
+        <Route path="desserts">
+          <Route index element={<ProductCatalog />} />
+          <Route path=":dessertId" element={<Itempage />} />
+        </Route>
+
+        <Route path="worlWithUs" element={<WorkWithUs />} />
+
+        <Route path="contacts" element={<Contacts />} />
+
+        <Route path="cart" element={<CartPage />} />
       </Route>
 
-      {/* <Route path="*" element={<NotFoundPage />} /> */}
+      <Route path="*" element={<NotFoundPage />} />
     </Routes>
   </HashRouter>
 );
