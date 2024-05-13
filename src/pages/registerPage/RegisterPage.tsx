@@ -15,7 +15,7 @@ export const RegisterPage = () => {
             <input type="text" placeholder='Пароль' className='regist__input' />
             <input type="text" placeholder='Повторіть пароль' className='regist__input' />
             <button type='submit' className='regist__button'>Зареєструватися</button>
-            <NavLink to='/' className='regist__link'>У мене вже є аккаунт</NavLink>
+            <NavLink to='/signin' className='regist__link'>У мене вже є аккаунт</NavLink>
           </form>
         </div>
         <div className='regist__images'>
