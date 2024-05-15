@@ -1,0 +1,171 @@
+.container {
+  padding: 0 100px;
+  margin: 0 auto;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* section catalog */
+.container_product_catalog {
+  background: #f0f0f0;
+}
+.container_section_catalog {
+  padding: 35px 0;
+}
+.catalog_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between
+}
+
+.catalog_list > li{
+    max-width: 200px;
+    
+}
+
+.catalog_list img {
+  margin-bottom: 15px;
+}
+.catalog_list p {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+  color: #494a4c;
+}
+
+/* section list */
+.container_section_list {
+  padding: 80px 0;
+}
+.product_list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 80px;
+  row-gap: 60px;
+}
+.container_text {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+.title_poduct {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 24px;
+  color: #494a4c;
+}
+.price_poduct {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: #494a4c;
+}
+.product_list a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 1px solid #fac310;
+
+  border-radius: 50px;
+  padding: 16px 24px;
+  width: 189px;
+  height: 52px;
+
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
+  color: #494a4c;
+}
+
+/* card */
+.container_product_view {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+}
+.container_img {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.container_form {
+  flex: 1;
+}
+.form_select {
+  border: 0;
+  border-bottom: 1px solid rgba(73, 74, 76, 0.5);
+  width: 100%;
+  padding: 11px 0;
+  outline: none;
+  margin-bottom: 32px;
+
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: #494a4c;
+}
+.form_select:last-child {
+  margin-bottom: 40px;
+}
+.title_product_view {
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 40px;
+  color: #494a4c;
+
+  margin-bottom: 40px;
+}
+.price_product_view {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: #494a4c;
+
+  margin-bottom: 40px;
+}
+
+.btn_submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #fac310;
+  border-radius: 50px;
+  padding: 16px 24px;
+  width: 221px;
+  height: 52px;
+
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
+  color: #494a4c;
+}
+.container_btn {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.container_btn p {
+  font-weight: 500;
+  font-size: 24px;
+
+  line-height: 24px;
+  color: #494a4c;
+}
+.container_btn button {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 50px;
+  color: #494a4c;
+  box-shadow: 0 0 8px 5px rgba(0, 0, 0, 0.05);
+  background: #fff;
+}
