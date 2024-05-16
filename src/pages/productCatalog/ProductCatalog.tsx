@@ -1,14 +1,12 @@
 import "./productCatalog.scss";
 import css from "./ProductCatalog.module.css";
 import { useState } from "react";
-
 export const ProductCatalog = () => {
   const [descriptionToogle, setDescriptionToogle] = useState(false);
   const [amountProduct, setAmountProduct] = useState(1);
   const handleClick = () => {
     setDescriptionToogle(true);
   };
-
   return (
     <>
       <div className={`${css.container} ${css.container_product_catalog}`}>
