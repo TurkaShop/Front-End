@@ -1,4 +1,5 @@
 // import "./mainPage.scss";
+import { ProductCard } from "../../components/productCard/ProductCard";
 import css from "./mainPage.module.scss";
 
 export const MainPage: React.FC = () => {
@@ -86,6 +87,13 @@ export const MainPage: React.FC = () => {
       </section>
       <section className={css.our_desserts}>
         <p className={css.main__text}>Наші десерти</p>
+        <ul className={css.desserts__list}>
+          <ProductCard
+            name="Наполеон"
+            price="1000"
+            url="src/images/main_page/categories/cakes.png"
+          />
+        </ul>
       </section>
     </main>
   );
