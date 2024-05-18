@@ -1,15 +1,15 @@
-import styles from './productCard.module.scss';
+import styles from "./productCard.module.scss";
 
 type Props = {
-  name: string,
-  price: string,
-  url: string
-}
+  name: string;
+  price: string;
+  url: string;
+};
 
 export const ProductCard: React.FC<Props> = ({ name, price, url }) => {
   return (
-    <li>
-      <img src={url} alt="item_image" />
+    <li className={styles.product}>
+      <img src={url} alt="item_image" className={styles.item__img} />
       <div className={styles.container_text}>
         <p className={styles.title_poduct}>{name}</p>
         <p className={styles.price_poduct}>{price}</p>
@@ -18,5 +18,5 @@ export const ProductCard: React.FC<Props> = ({ name, price, url }) => {
         Переглянути
       </a>
     </li>
-  )
+  );
 };

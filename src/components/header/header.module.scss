@@ -13,6 +13,7 @@
 .header__list {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   //   padding-left: 200px;
 }
 .header__icons {
@@ -20,18 +21,59 @@
   flex-direction: row;
   //   padding-left: 200px;
 }
+
+.header__loup {
+  background-image: url(../../images/header/gg_search.svg);
+}
+
+.header__cart {
+  background-image: url(../../images/header/lets-icons_basket-alt-3-light.svg);
+}
+
+.header__login {
+  background-image: url(../../images/header/material-symbols_person-outline.svg);
+}
 .header__text_item {
-  padding-left: 64px;
+  margin-left: 64px;
   font-weight: 400;
   font-size: 18px;
   line-height: 18px;
+  transition: 0.5s;
+
+  &:hover {
+    // font-weight: 700;
+
+    color: #fac310;
+  }
+}
+
+.header__text_item:first-child {
+  margin-left: 0;
 }
 .header__text_item:first-child {
   padding-left: 0px;
 }
 .header__icons_item {
-  padding-left: 40px;
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  margin-top: 7px;
+  margin-right: 40px;
+  transition: 0.5s;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover {
+    transform: scale(1.2);
+  }
 }
+
 .header__icons_item:first-child {
   padding-left: 0;
+}
+
+.item__width {
+  width: 57px;
 }

@@ -34,4 +34,12 @@
   font-size: 20px;
   line-height: 20px;
   color: #494a4c;
+
+  &:hover {
+    transition: 0.5s;
+    background-color: #fac310;
+  }
+}
+.item__img {
+  border-radius: 16px;
 }

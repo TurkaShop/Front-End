@@ -8,9 +8,10 @@ export const MainPage: React.FC = () => {
       <section className={`${css.hero} ${css.container}`}>
         <div className={css.hero__content}>
           <div className={css.hero__text}>
-            <p className={css.welcome__text}>
+            <img src="src/images/main_page/hi_sweety.svg" alt="hi, sweety" />
+            {/* <p className={css.welcome__text}>
               привіт, <p>мій солоденький</p>
-            </p>
+            </p> */}
             <p className={css.hero__btn_container}>
               <a href="/">
                 <button className={css.hero__btn}>Спробувати найкраще</button>
@@ -60,38 +61,76 @@ export const MainPage: React.FC = () => {
       <section className={css.categories}>
         <ul className={css.categories__list}>
           <li className={css.categories__item}>
-            <img
-              src="src/images/main_page/categories/cakes.png"
-              alt="cakes"
-              className={css.categories__img}
-            />
-            <p className={css.categories__item_text}>Торти</p>
+            <a href="/">
+              <img
+                src="src/images/main_page/categories/cakes.png"
+                alt="cakes"
+                className={css.categories__img}
+              />
+            </a>
+            <a>
+              <p className={css.categories__item_text}>Торти</p>
+            </a>
           </li>
           <li className={css.categories__item}>
-            <img
-              src="src/images/main_page/categories/baking.png"
-              alt="Baking"
-              className={css.categories__img}
-            />
+            <a href="/">
+              <img
+                src="src/images/main_page/categories/baking.png"
+                alt="Baking"
+                className={css.categories__img}
+              />
+            </a>
             <p className={css.categories__item_text}>Випічка</p>
           </li>
           <li className={css.categories__item}>
-            <img
-              src="src/images/main_page/categories/desserts.png"
-              alt="Desserts"
-              className={css.categories__img}
-            />
+            <a href="/">
+              <img
+                src="src/images/main_page/categories/desserts.png"
+                alt="Desserts"
+                className={css.categories__img}
+              />
+            </a>
             <p className={css.categories__item_text}>Десерти</p>
           </li>
         </ul>
       </section>
       <section className={css.our_desserts}>
+        <img
+          src="src/images/main_page/our_desserts/dab_1.png"
+          alt="dab_img"
+          className={css.dab__img}
+        />
         <p className={css.main__text}>Наші десерти</p>
         <ul className={css.desserts__list}>
           <ProductCard
             name="Наполеон"
-            price="1000"
-            url="src/images/main_page/categories/cakes.png"
+            price="500 UAH"
+            url="src/images/main_page/our_desserts/napoleon.jpg"
+          />
+          <ProductCard
+            name="Наполеон"
+            price="1000 UAH"
+            url="src/images/main_page/our_desserts/chokolate_sausage.jpg"
+          />
+          <ProductCard
+            name="Наполеон"
+            price="1000 UAH"
+            url="src/images/main_page/our_desserts/red_cake.jpg"
+          />
+          <ProductCard
+            name="Наполеон"
+            price="1000 UAH"
+            url="src/images/main_page/our_desserts/cheese_cake.jpg"
+          />
+          <ProductCard
+            name="Наполеон"
+            price="1000 UAH"
+            url="src/images/main_page/our_desserts/medovik.jpg"
+          />
+          <ProductCard
+            name="Наполеон"
+            price="1000 UAH"
+            url="src/images/main_page/our_desserts/praga.jpg"
           />
         </ul>
       </section>
