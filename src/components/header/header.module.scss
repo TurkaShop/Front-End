@@ -1,0 +1,37 @@
+.logo__img {
+  width: 132px;
+  height: 60px;
+}
+.header__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.header__list {
+  display: flex;
+  flex-direction: row;
+  //   padding-left: 200px;
+}
+.header__icons {
+  display: flex;
+  flex-direction: row;
+  //   padding-left: 200px;
+}
+.header__text_item {
+  padding-left: 64px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+}
+.header__text_item:first-child {
+  padding-left: 0px;
+}
+.header__icons_item {
+  padding-left: 40px;
+}
+.header__icons_item:first-child {
+  padding-left: 0;
+}
