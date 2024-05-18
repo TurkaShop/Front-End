@@ -14,7 +14,7 @@ export const ProductCard: React.FC<Props> = ({ name, price, url }) => {
         <p className={styles.title_poduct}>{name}</p>
         <p className={styles.price_poduct}>{price}</p>
       </div>
-      <a href="#prodact-view">
+      <a href="#prodact-view" className={styles.item_button}>
         Переглянути
       </a>
     </li>

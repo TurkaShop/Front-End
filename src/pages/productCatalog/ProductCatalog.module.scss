@@ -92,24 +92,6 @@ html {
   flex-wrap: wrap;
   gap: 80px;
   row-gap: 60px;
-
-  & a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    border: 1px solid #fac310;
-
-    border-radius: 50px;
-    padding: 16px 24px;
-    width: 189px;
-    height: 52px;
-
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 20px;
-    color: #494a4c;
-  }
 }
 
 /* card */
