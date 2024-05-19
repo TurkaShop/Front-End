@@ -9,38 +9,38 @@ export const ProductCatalog = () => {
   };
   return (
     <>
-      <div className={`${css.container} ${css.container_product_catalog}`}>
+      <div className={css.container_product_catalog}>
         <div className={css.container_section_catalog}>
           <ul className={css.catalog_list}>
-            <li>
+            <li className={css.catalog_first_list}>
               <img
                 src="src/pages/productCatalog/images/Frame98.jpg"
                 alt="cakes"
               />
               <p>Бісквітні торти</p>
             </li>
-            <li>
+            <li className={css.catalog_second_list}>
               <img
                 src="src/pages/productCatalog/images/Frame98.jpg"
                 alt="cakes"
               />
               <p>Фірмові торти</p>
             </li>
-            <li>
+            <li className={css.catalog_third_list}>
               <img
                 src="src/pages/productCatalog/images/Frame98.jpg"
                 alt="cakes"
               />
               <p>Чізкейки</p>
             </li>
-            <li>
+            <li className={css.catalog_fourth_list}>
               <img
                 src="src/pages/productCatalog/images/Frame98.jpg"
                 alt="cakes"
               />
               <p>Шоколадні</p>
             </li>
-            <li>
+            <li className={css.catalog_fifth_list}>
               <img
                 src="src/pages/productCatalog/images/Frame98.jpg"
                 alt="cakes"
