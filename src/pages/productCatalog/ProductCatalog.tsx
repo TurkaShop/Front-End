@@ -34,7 +34,7 @@ export const ProductCatalog: React.FC = () => {
               />
               <p>Фірмові торти</p>
             </li>
-            <li>
+            <li className={css.catalog_third_item}>
               <img
                 src="src/pages/productCatalog/images/Frame98.jpg"
                 alt="cakes"
