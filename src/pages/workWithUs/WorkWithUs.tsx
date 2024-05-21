@@ -4,6 +4,7 @@ import WorkSVGTwo from "../../images/work_two.svg";
 import WorkSVGThree from "../../images/work_three.svg";
 import WorkSVGFour from "../../images/work_four.svg";
 
+
 export const WorkWithUs = () => {
   return (
     <div>
@@ -13,22 +14,22 @@ export const WorkWithUs = () => {
         <div>
           <ul className='work__list'>
             <li className='work__item'>
-              <img src={WorkSVGOne} alt="" />
+              <img src={WorkSVGOne} alt="Значок машины" />
               <p className='work__listtitle'>Власна логістика</p>
               <p className='work__listtext'>Прийом замовлень через <br /> сайт та своєчасна доставка <br /> 7 днів на тиждень</p>
             </li>
             <li className='work__item'>
-              <img src={WorkSVGTwo} alt="" />
+              <img src={WorkSVGTwo} alt="Значок щита" />
               <p className='work__listtitle'>НАССР</p>
               <p className='work__listtext'>Управління безпекою <br /> продукції згідно з <br /> принципами HACCP</p>
             </li>
             <li className='work__item'>
-              <img src={WorkSVGThree} alt="" />
+              <img src={WorkSVGThree} alt="Значок менеджера" />
               <p className='work__listtitle'>Ваш Менеджер</p>
               <p className='work__listtext'>Консультації на кожному <br /> етапі співпраці і допомога з <br /> вибором асортименту</p>
             </li>
             <li className='work__item'>
-              <img src={WorkSVGFour} alt="" />
+              <img src={WorkSVGFour} alt="Значок пшеницы" />
               <p className='work__listtitle'>Інгредієнти</p>
               <p className='work__listtext'>Використовуємо тільки <br /> якісні інгредієнти від <br /> перевірених <br /> постачальників</p>
             </li>

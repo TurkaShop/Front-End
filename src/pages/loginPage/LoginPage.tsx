@@ -29,7 +29,7 @@ export const LoginPage = () => {
 
             <div className='regist__images'>
               <div className='regist__dessert'>
-                <img src={Registlogo} alt="" />
+                <img src={Registlogo} alt="Логотип" />
               </div>
             </div>
           </div>

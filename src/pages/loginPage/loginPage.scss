@@ -1,25 +1,29 @@
-.login__link{
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 16px;
-    text-align: left;
-    color: #470000;
-    display: flex;
-    margin-bottom: 24px;
-    cursor: pointer;
+.login {
+    &__link {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 16px;
+        text-align: left;
+        color: #470000;
+        display: flex;
+        margin-bottom: 24px;
+        cursor: pointer;
+    }
+
+    &__link__style {
+        text-decoration: underline;
+        cursor: pointer;
+    }
 }
 
-.login__link__style{
-  text-decoration: underline;
-  cursor: pointer;
-}
+.forgot {
+    &__link {
+        display: flex;
+        gap: 5px;
 
-.forgot__link{
-    display: flex;
-    gap: 5px;
-    
-}
+    }
 
-.forgot__title{
-    margin-bottom: 32px;
+    &__title {
+        margin-bottom: 32px;
+    }
 }

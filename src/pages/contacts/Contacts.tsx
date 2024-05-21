@@ -17,10 +17,10 @@ export const Contacts = () => {
           <a href="tel:+380 67 594 73 73" className='contacts__description'>+380 67 594 73 73</a>
           <a href="mailto:turkacaffee@gmail.com" className='contacts__description'>turkacaffee@gmail.com</a>
           <div className='contacts__link'>
-            <a href=""><img src={Telegram} alt="" /></a>
-            <a href=""><img src={Viber} alt="" /></a>
-            <a href=""><img src={Instagram} alt="" /></a>
-            <a href=""><img src={Facebook} alt="" /></a>
+            <a href=""><img src={Telegram} alt="Телеграм" /></a>
+            <a href=""><img src={Viber} alt="Вайбер" /></a>
+            <a href=""><img src={Instagram} alt="Инстаграм" /></a>
+            <a href=""><img src={Facebook} alt="Фэйсбук" /></a>
           </div>
           <p className='contacts__text'>Контакти фірмових кав’ярень:</p>
           <div className='contacts__cafe'>
@@ -30,7 +30,7 @@ export const Contacts = () => {
                 <a href="tel:+380 67 984 64 34" >+380 67 984 64 34</a>
               </div>
               <p className='contacts__description contacts__item'>Щодня з 9:00 по 21:00</p>
-              <a href="" className='instagram__link'><img src={InstLink} alt="" /><p>turka_caffee_</p></a>
+              <a href="" className='instagram__link'><img src={InstLink} alt="Значок инстаграма" /><p>turka_caffee_</p></a>
           </div>
           <div>
               <p className='contacts__description'>м. Київ, вул. Олеся Гончара, 74</p>
@@ -38,7 +38,7 @@ export const Contacts = () => {
                 <a href="tel:+380 97 780 53 57" >+380 97 780 53 57</a>
               </div>
               <p className='contacts__description'>Пн-Чт, Нд з 9:00 по 20:00 <br/> Пт-Сб з 9:00 по 21:00</p>
-              <a href="" className='instagram__link'><img src={InstLink} alt="" /><p>turkanahonchara</p></a>
+              <a href="" className='instagram__link'><img src={InstLink} alt="Значок инстаграма" /><p>turkanahonchara</p></a>
           </div>
           </div>
         </div>
