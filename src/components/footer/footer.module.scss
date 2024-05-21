@@ -1,5 +1,5 @@
 .footer {
-  @media (min-width: 1200px) {
+  @media (min-width: 1300px) {
     padding: 43px 228px;
     display: flex;
     justify-content: center;
@@ -13,7 +13,7 @@
   padding: 32px;
   background-color: #fac310;
   &__block {
-    @media (min-width: 1200px) {
+    @media (min-width: 1300px) {
       grid-template-columns: 93px 77px 89px 101px 223px;
       grid-template-rows: 144px;
       grid-gap: 100px;
@@ -25,7 +25,7 @@
   }
 
   &__logo {
-    @media (min-width: 1200px) {
+    @media (min-width: 1300px) {
       background-image: url("../../images/footerlogo.svg");
       background-position: top left;
       background-repeat: no-repeat;
@@ -47,7 +47,7 @@
 
 .menu {
   &__list_left {
-    @media (min-width: 1200px) {
+    @media (min-width: 1300px) {
       grid-column: 2;
       grid-row: 1;
     }
@@ -56,7 +56,7 @@
   }
 
   &__list_middle {
-    @media (min-width: 1200px) {
+    @media (min-width: 1300px) {
       grid-column: 3;
       grid-row: 1;
     }
@@ -65,7 +65,7 @@
   }
 
   &__list_right {
-    @media (min-width: 1200px) {
+    @media (min-width: 1300px) {
       grid-column: 4;
       grid-row: 1;
     }
@@ -108,7 +108,7 @@
 }
 
 .contacts {
-  @media (min-width: 1200px) {
+  @media (min-width: 1300px) {
     grid-column: 5;
     grid-row: 1;
     margin-right: 0;
@@ -129,7 +129,7 @@
 }
 
 .work__time {
-  @media (min-width: 1200px) {
+  @media (min-width: 1300px) {
     font-size: 20px;
   }
   font-weight: 400;

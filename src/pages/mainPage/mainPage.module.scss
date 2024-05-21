@@ -6,7 +6,7 @@
   background-size: cover;
   padding: 50px 11px;
 
-  @media (min-width: 1200px) {
+  @media (min-width: 1300px) {
     background-image: url("../../images/aboutusbackground.png");
     padding: 99px 341px;
     display: flex;
@@ -21,7 +21,7 @@
     flex-direction: column;
   }
   &__subject {
-    @media (min-width: 1200px) {
+    @media (min-width: 1300px) {
       font-size: 40px;
       line-height: 49px;
     }
@@ -35,7 +35,7 @@
   }
 
   &__link {
-    @media (min-width: 1200px) {
+    @media (min-width: 1300px) {
       margin-top: 40px;
       margin-left: 0;
     }
@@ -57,7 +57,7 @@
 
   .counter {
     &__container {
-      @media (min-width: 1200px) {
+      @media (min-width: 1300px) {
         grid-template-columns: 210px 210px 210px;
         grid-template-rows: 150px;
         grid-gap: 64px;
@@ -70,7 +70,7 @@
     }
 
     &__years {
-      @media (min-width: 1200px) {
+      @media (min-width: 1300px) {
         padding: 24px 60px;
         grid-column: 1;
       }
@@ -88,7 +88,7 @@
     }
 
     &__clients {
-      @media (min-width: 1200px) {
+      @media (min-width: 1300px) {
         padding: 23.5px 37.5px;
         grid-column: 2;
       }
@@ -106,7 +106,7 @@
     }
 
     &__dessert {
-      @media (min-width: 1200px) {
+      @media (min-width: 1300px) {
         padding: 23.5px 31.5px;
         grid-column: 3;
         grid-row: 1;
@@ -125,7 +125,7 @@
     }
 
     &__numbers {
-      @media (min-width: 1200px) {
+      @media (min-width: 1300px) {
         font-weight: 800;
         font-size: 42px;
         margin-bottom: 30px;
@@ -138,7 +138,7 @@
     }
 
     &__names {
-      @media (min-width: 1200px) {
+      @media (min-width: 1300px) {
         font-size: 32px;
       }
 
