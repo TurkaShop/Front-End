@@ -6,7 +6,7 @@
   background-size: cover;
   padding: 50px 11px;
 
-  @media (min-width: 1300px) {
+  @media (min-width: 1024px) {
     background-image: url("../../images/aboutusbackground.png");
     padding: 99px 341px;
     display: flex;
@@ -14,32 +14,29 @@
     justify-content: center;
     align-items: center;
   }
+
   &__text_block {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }
+  
   &__subject {
-    @media (min-width: 1300px) {
-      font-size: 40px;
-      line-height: 49px;
-    }
-
     color: #ffffff;
     line-height: 44px;
     text-align: center;
     font-size: 36px;
     margin-top: 30px;
     font-weight: 600;
+
+    @media (min-width: 1024px) {
+      font-size: 40px;
+      line-height: 49px;
+    }
   }
 
   &__link {
-    @media (min-width: 1300px) {
-      margin-top: 40px;
-      margin-left: 0;
-    }
-
     font-weight: 600;
     font-size: 20px;
     text-align: center;
@@ -51,30 +48,30 @@
     border: 1px;
     border-radius: 50px;
     background-color: #fac310;
+
+    @media (min-width: 1024px) {
+      margin-top: 40px;
+      margin-left: 0;
+    }
   }
 
   //Statistic block / grid
 
   .counter {
     &__container {
-      @media (min-width: 1300px) {
-        grid-template-columns: 210px 210px 210px;
-        grid-template-rows: 150px;
-        grid-gap: 64px;
-      }
-
       display: grid;
       grid-template-columns: repeat(8, 1fr);
       grid-template-rows: 100px 100px;
       grid-gap: 10px;
+
+      @media (min-width: 1024px) {
+        grid-template-columns: 210px 210px 210px;
+        grid-template-rows: 150px;
+        grid-gap: 64px;
+      }
     }
 
     &__years {
-      @media (min-width: 1300px) {
-        padding: 24px 60px;
-        grid-column: 1;
-      }
-
       background-color: rgba(255, 255, 255, 0.25);
       backdrop-filter: blur(4px);
       border-radius: 8px;
@@ -85,14 +82,14 @@
       grid-column: 1/5;
       grid-row: 1/2;
       padding: 17.5px 56px;
+
+      @media (min-width: 1024px) {
+        padding: 24px 60px;
+        grid-column: 1;
+      }
     }
 
     &__clients {
-      @media (min-width: 1300px) {
-        padding: 23.5px 37.5px;
-        grid-column: 2;
-      }
-
       background-color: rgba(255, 255, 255, 0.25);
       backdrop-filter: blur(4px);
       border-radius: 8px;
@@ -103,15 +100,14 @@
       grid-column: 5/9;
       grid-row: 1/2;
       padding: 17.5px 39.5px;
+
+      @media (min-width: 1024px) {
+        padding: 23.5px 37.5px;
+        grid-column: 2;
+      }
     }
 
     &__dessert {
-      @media (min-width: 1300px) {
-        padding: 23.5px 31.5px;
-        grid-column: 3;
-        grid-row: 1;
-      }
-
       background-color: rgba(255, 255, 255, 0.25);
       backdrop-filter: blur(4px);
       border-radius: 8px;
@@ -122,29 +118,35 @@
       grid-column: 3/7;
       grid-row: 2/2;
       padding: 17.5px 34.5px;
+
+      @media (min-width: 1024px) {
+        padding: 23.5px 31.5px;
+        grid-column: 3;
+        grid-row: 1;
+      }
     }
 
     &__numbers {
-      @media (min-width: 1300px) {
-        font-weight: 800;
-        font-size: 42px;
-        margin-bottom: 30px;
-      }
-
       font-weight: 800;
       font-size: 36px;
       margin-bottom: 15px;
       color: #ffffff;
+
+      @media (min-width: 1024px) {
+        font-weight: 800;
+        font-size: 42px;
+        margin-bottom: 30px;
+      }
     }
 
     &__names {
-      @media (min-width: 1300px) {
-        font-size: 32px;
-      }
-
       font-weight: 400;
       font-size: 24px;
       color: #ffffff;
+
+      @media (min-width: 1024px) {
+        font-size: 32px;
+      }
     }
   }
 }

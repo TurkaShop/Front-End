@@ -8,8 +8,7 @@ export const Footer = () => {
     <>
     <div className = {css.footer}>
       <div className={css.footer__block}>
-        <div className={css.footer__logo}>
-        </div>
+        <div className={css.footer__logo} />
 
         <div className={css.menu}>
           <ul className={css.menu__list_left}>
@@ -21,7 +20,6 @@ export const Footer = () => {
             <li className={css.menu__item}>
               <a href="index.html" className={css.footer__link}>Випічка</a>
             </li>
-
           </ul>
         </div>
 
@@ -52,7 +50,6 @@ export const Footer = () => {
             <li className={css.forcustomers__item}>
               <a href="index.html" className={css.footer__link}>Доставка</a>
             </li>
-
           </ul>
         </div>
 
