@@ -6,62 +6,74 @@ const cakses = [
   {
     id: 1,
     name: "Наполеон",
-    url: "src/pages/productCatalog/images/Frame56.jpg",
+    url: "src/pages/productCatalog/images/Napoleon.jpg",
     price: "500 UAH",
   },
   {
     id: 1,
-    name: "Наполеон",
-    url: "src/pages/productCatalog/images/Frame56.jpg",
+    name: "Цвітаївський пиріг",
+    url: "src/pages/productCatalog/images/Tsvitaivskyi_pie.jpg",
+    price: "450 UAH",
+  },
+  {
+    id: 1,
+    name: "Червоний оксамит",
+    url: "src/pages/productCatalog/images/Red_velvet.jpg",
+    price: "800 UAH",
+  },
+  {
+    id: 1,
+    name: "Моркв’яний торт",
+    url: "src/pages/productCatalog/images/Carrot_cake.jpg",
     price: "500 UAH",
   },
   {
     id: 1,
-    name: "Наполеон",
-    url: "src/pages/productCatalog/images/Frame56.jpg",
+    name: "Празький торт",
+    url: "src/pages/productCatalog/images/Prague_cake.jpg",
+    price: "450 UAH",
+  },
+  {
+    id: 1,
+    name: "Чизкейн Нью-Йорк",
+    url: "src/pages/productCatalog/images/Cheesecake_New_York.jpg",
+    price: "800 UAH",
+  },
+  {
+    id: 1,
+    name: "Медовик",
+    url: "src/pages/productCatalog/images/honey_bee.jpg",
     price: "500 UAH",
   },
   {
     id: 1,
-    name: "Наполеон",
-    url: "src/pages/productCatalog/images/Frame56.jpg",
+    name: "Баскський чизкейк",
+    url: "src/pages/productCatalog/images/Basque_cheesecake.jpg",
+    price: "550 UAH",
+  },
+  {
+    id: 1,
+    name: "Вафельний торт",
+    url: "src/pages/productCatalog/images/Waffle_cake.jpg",
+    price: "800 UAH",
+  },
+  {
+    id: 1,
+    name: "Тарт шоколад",
+    url: "src/pages/productCatalog/images/Tart_chocolate.jpg",
     price: "500 UAH",
   },
   {
     id: 1,
-    name: "Наполеон",
-    url: "src/pages/productCatalog/images/Frame56.jpg",
-    price: "500 UAH",
+    name: "Жосефіна",
+    url: "src/pages/productCatalog/images/Josephine.jpg",
+    price: "800 UAH",
   },
   {
     id: 1,
-    name: "Наполеон",
-    url: "src/pages/productCatalog/images/Frame56.jpg",
-    price: "500 UAH",
-  },
-  {
-    id: 1,
-    name: "Наполеон",
-    url: "src/pages/productCatalog/images/Frame56.jpg",
-    price: "500 UAH",
-  },
-  {
-    id: 1,
-    name: "Наполеон",
-    url: "src/pages/productCatalog/images/Frame56.jpg",
-    price: "500 UAH",
-  },
-  {
-    id: 1,
-    name: "Наполеон",
-    url: "src/pages/productCatalog/images/Frame56.jpg",
-    price: "500 UAH",
-  },
-  {
-    id: 1,
-    name: "Наполеон",
-    url: "src/pages/productCatalog/images/Frame56.jpg",
-    price: "500 UAH",
+    name: "Пані Валевська",
+    url: "src/pages/productCatalog/images/MrsValevska.jpg",
+    price: "800 UAH",
   },
 ];
 
@@ -84,8 +96,8 @@ export const ProductCatalog: React.FC = () => {
                   className={`${flagCatalog && css.catalog_list_input}`}
                 />
                 <img
-                  src="src/pages/productCatalog/images/Frame98.jpg"
-                  alt="cakes"
+                  src="src/pages/productCatalog/images-catalog/Biscuit_cakes.jpg"
+                  alt="Biscuit cakes"
                 />
                 <p>Бісквітні торти</p>
               </label>
@@ -101,8 +113,8 @@ export const ProductCatalog: React.FC = () => {
                   className={`${flagCatalog && css.catalog_list_input}`}
                 />
                 <img
-                  src="src/pages/productCatalog/images/Frame98.jpg"
-                  alt="cakes"
+                  src="src/pages/productCatalog/images-catalog/Company_cakes.jpg"
+                  alt="Company cakes"
                 />
                 <p>Фірмові торти</p>
               </label>
@@ -119,8 +131,8 @@ export const ProductCatalog: React.FC = () => {
                   className={`${flagCatalog && css.catalog_list_input}`}
                 />
                 <img
-                  src="src/pages/productCatalog/images/Frame98.jpg"
-                  alt="cakes"
+                  src="src/pages/productCatalog/images-catalog/Cheesecakes.jpg"
+                  alt="Cheesecakes"
                 />
                 <p>Чізкейки</p>
               </label>
@@ -136,8 +148,8 @@ export const ProductCatalog: React.FC = () => {
                   className={`${flagCatalog && css.catalog_list_input}`}
                 />
                 <img
-                  src="src/pages/productCatalog/images/Frame98.jpg"
-                  alt="cakes"
+                  src="src/pages/productCatalog/images-catalog/Chocolate.jpg"
+                  alt="Chocolate"
                 />
                 <p>Шоколадні</p>
               </label>
@@ -153,8 +165,8 @@ export const ProductCatalog: React.FC = () => {
                   className={`${flagCatalog && css.catalog_list_input}`}
                 />
                 <img
-                  src="src/pages/productCatalog/images/Frame98.jpg"
-                  alt="cakes"
+                  src="src/pages/productCatalog/images-catalog/Classic_cakes.jpg"
+                  alt="Classic cakes"
                 />
                 <p>Класичні торти</p>
               </label>

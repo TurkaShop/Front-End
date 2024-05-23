@@ -1,7 +1,7 @@
 .container_text {
   display: flex;
+  height: 48px;
   justify-content: space-between;
-  max-width: 360px;
   margin: 10px 0;
   @media (min-width: 480px) {
    margin: 20px 0;
@@ -21,6 +21,7 @@
 .price_poduct {
   font-weight: 400;
   font-size: 16px;
+  white-space: nowrap;
   line-height: 1;
   color: #494a4c;
   @media (min-width: 480px) {

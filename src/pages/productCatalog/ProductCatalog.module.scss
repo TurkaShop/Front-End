@@ -114,6 +114,9 @@ input {
 }
 
 .product_list li {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
   width: 240px;
   @media (min-width: 480px) {
     width: calc((100% - 100px) / 1);
@@ -124,6 +127,9 @@ input {
   @media (min-width: 1024px) {
     width: calc((100% - 160px) / 3);
   }
+}
+.product_list img{
+  display: flex;
 }
 
 /* card */

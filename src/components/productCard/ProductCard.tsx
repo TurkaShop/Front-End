@@ -9,7 +9,7 @@ type Props = {
 export const ProductCard: React.FC<Props> = ({ name, price, url }) => {
   return (
     <li>
-      <img src={url} alt="item_image" />
+      <img src={url} alt={name} />
       <div className={styles.container_text}>
         <p className={styles.title_poduct}>{name}</p>
         <p className={styles.price_poduct}>{price}</p>
