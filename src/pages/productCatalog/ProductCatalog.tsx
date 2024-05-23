@@ -97,7 +97,7 @@ export const ProductCatalog: React.FC = () => {
                 />
                 <img
                   src="src/pages/productCatalog/images-catalog/Biscuit_cakes.jpg"
-                  alt="Biscuit cakes"
+                  alt="Бісквітні торти"
                 />
                 <p>Бісквітні торти</p>
               </label>
@@ -114,7 +114,7 @@ export const ProductCatalog: React.FC = () => {
                 />
                 <img
                   src="src/pages/productCatalog/images-catalog/Company_cakes.jpg"
-                  alt="Company cakes"
+                  alt="Фірмові торти"
                 />
                 <p>Фірмові торти</p>
               </label>
@@ -132,7 +132,7 @@ export const ProductCatalog: React.FC = () => {
                 />
                 <img
                   src="src/pages/productCatalog/images-catalog/Cheesecakes.jpg"
-                  alt="Cheesecakes"
+                  alt="Чізкейки"
                 />
                 <p>Чізкейки</p>
               </label>
@@ -149,7 +149,7 @@ export const ProductCatalog: React.FC = () => {
                 />
                 <img
                   src="src/pages/productCatalog/images-catalog/Chocolate.jpg"
-                  alt="Chocolate"
+                  alt="Шоколадні"
                 />
                 <p>Шоколадні</p>
               </label>
@@ -166,7 +166,7 @@ export const ProductCatalog: React.FC = () => {
                 />
                 <img
                   src="src/pages/productCatalog/images-catalog/Classic_cakes.jpg"
-                  alt="Classic cakes"
+                  alt="Класичні торти"
                 />
                 <p>Класичні торти</p>
               </label>
