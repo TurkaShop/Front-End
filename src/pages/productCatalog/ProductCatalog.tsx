@@ -177,18 +177,14 @@ export const ProductCatalog: React.FC = () => {
 
       <div className={css.container}>
         <div className={css.container_section_list}>
-          <ul className={css.product_list}>
-            {cakses.map((cake) => (
-              <ProductCard
-                key={cake.id}
-                name={cake.name}
-                price={cake.price}
-                url={cake.url}
-              />
-            ))}
-          </ul>
+          <div className={css.product_list}>
+            {cakses.map(cake => 
+              <ProductCard key={cake.id} name={cake.name} price={cake.price} url={cake.url} />
+            )}
+          </div>
         </div>
       </div>
     </>
   );
 };
+
