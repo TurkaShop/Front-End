@@ -34,7 +34,7 @@ export const Root: React.FC = () => (
           <Route path=":dessertId" element={<Itempage />} />
         </Route>
 
-        <Route path="worlWithUs" element={<WorkWithUs />} />
+        <Route path="workWithUs" element={<WorkWithUs />} />
 
         <Route path="contacts" element={<Contacts />} />
 

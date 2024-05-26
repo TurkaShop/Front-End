@@ -13,25 +13,25 @@ export const Header = () => {
       <ul className={css.header__list}>
         <NavLink to="/cakes" className={css.header__text_item}>
           <div className={css.item__width}>
-            <p>Торти</p>
+            <p className={css.header__text}>Торти</p>
           </div>
         </NavLink>
 
         <NavLink to="/cakes" className={css.header__text_item}>
           <div className={css.item__width}>
-            <p>Випічка</p>
+            <p className={css.header__text}>Випічка</p>
           </div>
         </NavLink>
 
         <NavLink to="/cakes" className={css.header__text_item}>
           <div className={css.item__width}>
-            <p>Десерти</p>
+            <p className={css.header__text}>Десерти</p>
           </div>
         </NavLink>
 
         <NavLink to="/cakes" className={css.header__text_item}>
           <div className={css.item__width}>
-            <p>Контакти</p>
+            <p className={css.header__text}>Контакти</p>
           </div>
         </NavLink>
       </ul>
@@ -53,6 +53,13 @@ export const Header = () => {
           </li>
         </a>
       </ul>
+      <NavLink to="/" className={css.burger}>
+        <img
+          src={"src/images/header/burger.svg"}
+          alt="burger menu"
+          className={css.burger__img}
+        />
+      </NavLink>
     </header>
   );
 };

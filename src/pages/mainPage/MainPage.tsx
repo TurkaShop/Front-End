@@ -8,10 +8,22 @@ export const MainPage: React.FC = () => {
       <section className={`${css.hero} ${css.container}`}>
         <div className={css.hero__content}>
           <div className={css.hero__text}>
-            <img src="src/images/main_page/hi_sweety.svg" alt="hi, sweety" />
+            <img
+              src="src/images/main_page/hi_sweety.svg"
+              alt="hi, sweety"
+              className={css.hero__img}
+            />
+            <div className={css.sweety__mobile}>
+              <img
+                src="src/images/main_page/hi_sweety2.svg"
+                alt="hi, sweety"
+                className={css.hero__img_mobile}
+              />
+            </div>
             {/* <p className={css.welcome__text}>
               привіт, <p>мій солоденький</p>
             </p> */}
+            {/* <div className={css.welcome__text}></div> */}
             <p className={css.hero__btn_container}>
               <a href="/">
                 <button className={css.hero__btn}>Спробувати найкраще</button>
@@ -100,6 +112,11 @@ export const MainPage: React.FC = () => {
           alt="dab_img"
           className={css.dab__img}
         />
+        <img
+          src="src/images/main_page/our_desserts/dab_mobile.svg"
+          alt="dab image"
+          className={css.dab__img_mobile}
+        />
         <p className={css.main__text}>Наші десерти</p>
         <ul className={css.desserts__list}>
           <ProductCard
@@ -134,6 +151,32 @@ export const MainPage: React.FC = () => {
           />
         </ul>
       </section>
+      <div className={css.aboutus}>
+        <div className={css.counter__container}>
+          <div className={css.counter__years}>
+            <p className={css.counter__numbers}>8+</p>
+            <p className={css.counter__names}>Років</p>
+          </div>
+
+          <div className={css.counter__clients}>
+            <p className={css.counter__numbers}>20K+</p>
+            <p className={css.counter__names}>Клієнтів</p>
+          </div>
+
+          <div className={css.counter__dessert}>
+            <p className={css.counter__numbers}>500+</p>
+            <p className={css.counter__names}>Десертів</p>
+          </div>
+        </div>
+        <div className={css.aboutus__text_block}>
+          <p className={css.aboutus__subject}>
+            Хочете дізнатися більше про нас?
+          </p>
+          <a href="index.html" className={css.aboutus__link}>
+            Дізнатись Більше
+          </a>
+        </div>
+      </div>
     </main>
   );
 };
