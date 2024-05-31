@@ -120,31 +120,37 @@ export const MainPage: React.FC = () => {
         <p className={css.main__text}>Наші десерти</p>
         <ul className={css.desserts__list}>
           <ProductCard
+            id={1}
             name="Наполеон"
             price="500 UAH"
             url="src/images/main_page/our_desserts/napoleon.jpg"
           />
           <ProductCard
+            id={2}
             name="Наполеон"
             price="1000 UAH"
             url="src/images/main_page/our_desserts/chokolate_sausage.jpg"
           />
           <ProductCard
+            id={3}
             name="Наполеон"
             price="1000 UAH"
             url="src/images/main_page/our_desserts/red_cake.jpg"
           />
           <ProductCard
+            id={4}
             name="Наполеон"
             price="1000 UAH"
             url="src/images/main_page/our_desserts/cheese_cake.jpg"
           />
           <ProductCard
+            id={5}
             name="Наполеон"
             price="1000 UAH"
             url="src/images/main_page/our_desserts/medovik.jpg"
           />
           <ProductCard
+            id={6}
             name="Наполеон"
             price="1000 UAH"
             url="src/images/main_page/our_desserts/praga.jpg"

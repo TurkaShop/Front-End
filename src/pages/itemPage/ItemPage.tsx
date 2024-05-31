@@ -124,26 +124,28 @@ export const Itempage = () => {
               </select>
 
               <div className={classes.btn__container}>
-                <button
-                  onClick={() => {
-                    if (amountProduct === 1) {
-                      return;
-                    }
-                    setAmountProduct(amountProduct - 1);
-                  }}
-                >
-                  -
-                </button>
+                <div className={classes.btn__container_inner}>
+                  <button
+                    onClick={() => {
+                      if (amountProduct === 1) {
+                        return;
+                      }
+                      setAmountProduct(amountProduct - 1);
+                    }}
+                  >
+                    -
+                  </button>
 
-                <p>{amountProduct}</p>
+                  <p>{amountProduct}</p>
 
-                <button
-                  onClick={() => {
-                    setAmountProduct(amountProduct + 1);
-                  }}
-                >
-                  +
-                </button>
+                  <button
+                    onClick={() => {
+                      setAmountProduct(amountProduct + 1);
+                    }}
+                  >
+                    +
+                  </button>
+                </div>
               </div>
 
               <div className={classes.button__container}>
@@ -158,9 +160,9 @@ export const Itempage = () => {
 
       <div className={classes.recomendations}>
         <div className={classes.recomendations_container}>
-          <ProductCard name={'Червоний оксамит'} price={'500 UAH'} url={redCake} />
-          <ProductCard name={'Червоний оксамит'} price={'500 UAH'} url={redCake} />
-          <ProductCard name={'Червоний оксамит'} price={'500 UAH'} url={redCake} />
+          <ProductCard id={1} name={'Червоний оксамит'} price={'500 UAH'} url={redCake} />
+          <ProductCard id={2} name={'Червоний оксамит'} price={'500 UAH'} url={redCake} />
+          <ProductCard id={3} name={'Червоний оксамит'} price={'500 UAH'} url={redCake} />
         </div>
       </div>
     </>

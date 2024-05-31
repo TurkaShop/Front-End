@@ -179,7 +179,7 @@ export const ProductCatalog: React.FC = () => {
         <div className={css.container_section_list}>
           <div className={css.product_list}>
             {cakses.map(cake => 
-              <ProductCard key={cake.id} name={cake.name} price={cake.price} url={cake.url} />
+              <ProductCard key={cake.id} id={cake.id} name={cake.name} price={cake.price} url={cake.url} />
             )}
           </div>
         </div>

@@ -324,18 +324,26 @@
 .dab__img {
   position: absolute;
   top: 0.5%;
-  width: 180px;
-  height: 72px;
+
   display: none;
+
   @media (min-width: 860px) {
-    top: 1%;
     display: flex;
+    width: 240px;
+    height: 115px;
+    top: 3%;
   }
 
   @media (min-width: 1024px) {
+    width: 280px;
+    height: 135px;
+    top: 4%;
   }
 
   @media (min-width: 1400px) {
+    width: 330px;
+    height: 140px;
+    top: 3%;
   }
 }
 .dab__img_mobile {
@@ -344,6 +352,11 @@
   width: 227px;
   height: 72px;
   left: -10%;
+  @media (min-width: 640px) {
+    width: 280px;
+    height: 105px;
+    left: -7%;
+  }
   @media (min-width: 860px) {
     display: none;
   }
@@ -351,23 +364,25 @@
 .desserts__list {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fill, 240px);
+  grid-template-columns: 240px;
   row-gap: 30px;
   column-gap: 60px;
   max-width: 1200px;
   margin: 0 auto;
   justify-content: center;
+  @media (min-width: 640px) {
+    grid-template-columns: 240px 240px;
+  }
   @media (min-width: 860px) {
-    justify-content: space-around;
-    grid-template-columns: repeat(auto-fill, 360px);
+    grid-template-columns: 360px 360px;
     row-gap: 40px;
   }
-
   @media (min-width: 1024px) {
-    column-gap: 0;
+    grid-template-columns: 240px 240px 240px;
   }
 
   @media (min-width: 1400px) {
+    grid-template-columns: 360px 360px 360px;
   }
 }
 //About Us main container

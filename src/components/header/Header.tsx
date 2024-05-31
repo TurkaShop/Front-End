@@ -29,7 +29,7 @@ export const Header = () => {
           </div>
         </NavLink>
 
-        <NavLink to="/cakes" className={css.header__text_item}>
+        <NavLink to="/contacts" className={css.header__text_item}>
           <div className={css.item__width}>
             <p className={css.header__text}>Контакти</p>
           </div>
