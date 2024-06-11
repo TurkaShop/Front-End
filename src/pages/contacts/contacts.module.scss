@@ -4,9 +4,17 @@
     flex-direction: column;
     margin: 40px 0px 196px 100px;
 
+    @media(min-width: 426px) {
+       align-items: center;
+    }
+
     @media(max-width: 1300px) {
         margin: 40px auto;
     }
+    
+    @media(min-width: 1301px) {
+        align-items: flex-start;
+     }
 
     &__border {
         max-width: 1440px;
@@ -19,15 +27,15 @@
             flex-direction: column;
             border: none;
         }
-
     }
 
     &__map {
         width: 50%;
 
         @media(max-width: 1300px) {
-            width: 100%;
+            width: 394px;
             height: 692px;
+            margin: 0px auto;
         }
     }
 
