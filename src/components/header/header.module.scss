@@ -1,6 +1,7 @@
 .logo__img {
   width: 88px;
   height: 40px;
+
   @media (min-width: 860px) {
     width: 118px;
     height: 50px;
@@ -27,6 +28,7 @@
   padding-left: 24px;
   padding-right: 24px;
   justify-content: space-between;
+
   @media (min-width: 860px) {
     justify-content: space-around;
     padding-left: 0;
@@ -44,6 +46,7 @@
 
 .burger {
   display: flex;
+
   @media (min-width: 860px) {
     display: none;
   }
@@ -54,12 +57,11 @@
   @media (min-width: 1400px) {
   }
 }
-.burger__img {
-}
+
 .header__list {
   flex-direction: row;
-  // justify-content: space-between;
   display: none;
+
   @media (min-width: 860px) {
     display: flex;
     padding-left: 70px;
@@ -73,9 +75,11 @@
     padding-left: 200px;
   }
 }
+
 .header__icons {
   flex-direction: row;
   display: none;
+
   @media (min-width: 860px) {
     display: flex;
     padding-left: 70px;
@@ -103,6 +107,7 @@
 .header__login {
   background-image: url(../../images/header/material-symbols_person-outline.svg);
 }
+
 .header__text_item {
   font-weight: 400;
 
@@ -150,12 +155,15 @@
     line-height: 18px;
   }
 }
+
 .header__text_item:first-child {
   margin-left: 0;
 }
+
 .header__text_item:first-child {
   padding-left: 0px;
 }
+
 .header__icons_item {
   background-repeat: no-repeat;
   margin-top: 7px;
@@ -169,6 +177,7 @@
   &:hover {
     transform: scale(1.2);
   }
+  
   @media (min-width: 860px) {
     width: 28px;
     height: 28px;

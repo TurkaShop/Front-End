@@ -9,6 +9,7 @@ type Props = {
 };
 
 export const ProductCard: React.FC<Props> = ({ id, name, price, url }) => {
+  const category = 'cakes';
   return (
     <div className={styles.card}>
       <img src={url} alt="item_image" className={styles.image} />
@@ -16,7 +17,7 @@ export const ProductCard: React.FC<Props> = ({ id, name, price, url }) => {
         <p className={styles.title_poduct}>{name}</p>
         <p className={styles.price_poduct}>{price}</p>
       </div>
-      <NavLink to={`/${id}`} className={styles.item_button}>
+      <NavLink to={`/${category}/${id}`} className={styles.item_button}>
         Переглянути
       </NavLink>
     </div>

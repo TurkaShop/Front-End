@@ -13,9 +13,6 @@
   }
 }
 
-input {
-  position: absolute;
-}
 .catalog_list_input:not(.catalog_list_input:checked) ~ * {
   opacity: 0.5;
 }

@@ -1,180 +1,99 @@
-import { useState } from "react";
 import { ProductCard } from "../../components/productCard/ProductCard";
 import css from "./ProductCatalog.module.scss";
+import { SubHeader } from "../../components/SubHeader/SubHeader";
+import Napoleon from './images/Napoleon.jpg';
+import Tsvitayskyi from './images/Tsvitaivskyi_pie.jpg';
+import RedVelvet from './images/Red_velvet.jpg';
+import CarrotCake from './images/Carrot_cake.jpg';
+import PragueCake from './images/Prague_cake.jpg';
+import CheezeCake from './images/Cheesecake_New_York.jpg';
+import HoneyBee from './images/honey_bee.jpg';
+import Basque from './images/Basque_cheesecake.jpg';
+import Waffle from './images/Waffle_cake.jpg';
+import Tart from './images/Tart_chocolate.jpg';
+import Josephine from './images/Josephine.jpg';
+import MrsValevska from './images/MrsValevska.jpg';
 
 const cakses = [
   {
     id: 1,
-    name: "Наполеон",
-    url: "src/pages/productCatalog/images/Napoleon.jpg",
+    name: 'Наполеон',
+    url: Napoleon,
     price: "500 UAH",
   },
   {
-    id: 1,
+    id: 2,
     name: "Цвітаївський пиріг",
-    url: "src/pages/productCatalog/images/Tsvitaivskyi_pie.jpg",
+    url: Tsvitayskyi,
     price: "450 UAH",
   },
   {
-    id: 1,
+    id: 3,
     name: "Червоний оксамит",
-    url: "src/pages/productCatalog/images/Red_velvet.jpg",
+    url: RedVelvet,
     price: "800 UAH",
   },
   {
-    id: 1,
+    id: 4,
     name: "Моркв’яний торт",
-    url: "src/pages/productCatalog/images/Carrot_cake.jpg",
+    url: CarrotCake,
     price: "500 UAH",
   },
   {
-    id: 1,
+    id: 5,
     name: "Празький торт",
-    url: "src/pages/productCatalog/images/Prague_cake.jpg",
+    url: PragueCake,
     price: "450 UAH",
   },
   {
-    id: 1,
+    id: 6,
     name: "Чизкейн Нью-Йорк",
-    url: "src/pages/productCatalog/images/Cheesecake_New_York.jpg",
+    url: CheezeCake,
     price: "800 UAH",
   },
   {
-    id: 1,
+    id: 7,
     name: "Медовик",
-    url: "src/pages/productCatalog/images/honey_bee.jpg",
+    url: HoneyBee,
     price: "500 UAH",
   },
   {
-    id: 1,
+    id: 8,
     name: "Баскський чизкейк",
-    url: "src/pages/productCatalog/images/Basque_cheesecake.jpg",
+    url: Basque,
     price: "550 UAH",
   },
   {
-    id: 1,
+    id: 9,
     name: "Вафельний торт",
-    url: "src/pages/productCatalog/images/Waffle_cake.jpg",
+    url: Waffle,
     price: "800 UAH",
   },
   {
-    id: 1,
+    id: 10,
     name: "Тарт шоколад",
-    url: "src/pages/productCatalog/images/Tart_chocolate.jpg",
+    url: Tart,
     price: "500 UAH",
   },
   {
-    id: 1,
+    id: 11,
     name: "Жосефіна",
-    url: "src/pages/productCatalog/images/Josephine.jpg",
+    url: Josephine,
     price: "800 UAH",
   },
   {
-    id: 1,
+    id: 12,
     name: "Пані Валевська",
-    url: "src/pages/productCatalog/images/MrsValevska.jpg",
+    url: MrsValevska,
     price: "800 UAH",
   },
 ];
 
 export const ProductCatalog: React.FC = () => {
-  const [flagCatalog, setFlagCatalog] = useState(false);
 
   return (
     <>
-      <div className={`${css.container} ${css.container_product_catalog}`}>
-        <div className={css.container_section_catalog}>
-          <ul className={css.catalog_list}>
-            <li
-              onClick={() => {
-                setFlagCatalog(true);
-              }}
-            >
-              <label className={css.catalog_list_label}>
-                <input
-                  type="checkbox"
-                  className={`${flagCatalog && css.catalog_list_input}`}
-                />
-                <img
-                  src="src/pages/productCatalog/images-catalog/Biscuit_cakes.jpg"
-                  alt="Бісквітні торти"
-                />
-                <p>Бісквітні торти</p>
-              </label>
-            </li>
-            <li
-              onClick={() => {
-                setFlagCatalog(true);
-              }}
-            >
-              <label className={css.catalog_list_label}>
-                <input
-                  type="checkbox"
-                  className={`${flagCatalog && css.catalog_list_input}`}
-                />
-                <img
-                  src="src/pages/productCatalog/images-catalog/Company_cakes.jpg"
-                  alt="Фірмові торти"
-                />
-                <p>Фірмові торти</p>
-              </label>
-            </li>
-            <li
-              className={css.catalog_third_item}
-              onClick={() => {
-                setFlagCatalog(true);
-              }}
-            >
-              <label className={css.catalog_list_label}>
-                <input
-                  type="checkbox"
-                  className={`${flagCatalog && css.catalog_list_input}`}
-                />
-                <img
-                  src="src/pages/productCatalog/images-catalog/Cheesecakes.jpg"
-                  alt="Чізкейки"
-                />
-                <p>Чізкейки</p>
-              </label>
-            </li>
-            <li
-              onClick={() => {
-                setFlagCatalog(true);
-              }}
-            >
-              <label className={css.catalog_list_label}>
-                <input
-                  type="checkbox"
-                  className={`${flagCatalog && css.catalog_list_input}`}
-                />
-                <img
-                  src="src/pages/productCatalog/images-catalog/Chocolate.jpg"
-                  alt="Шоколадні"
-                />
-                <p>Шоколадні</p>
-              </label>
-            </li>
-            <li
-              onClick={() => {
-                setFlagCatalog(true);
-              }}
-            >
-              <label className={css.catalog_list_label}>
-                <input
-                  type="checkbox"
-                  className={`${flagCatalog && css.catalog_list_input}`}
-                />
-                <img
-                  src="src/pages/productCatalog/images-catalog/Classic_cakes.jpg"
-                  alt="Класичні торти"
-                />
-                <p>Класичні торти</p>
-              </label>
-            </li>
-          </ul>
-        </div>
-      </div>
-
+      <SubHeader />
       <div className={css.container}>
         <div className={css.container_section_list}>
           <div className={css.product_list}>

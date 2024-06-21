@@ -1,60 +1,20 @@
 import classes from './itemPage.module.scss';
-import bisquitCake from '../../images/bisquitCake.jpg';
-import firmCake from '../../images/firmCake.jpg';
-import cheezeCake from '../../images/cheezeCake.jpg';
-import chocolateCake from '../../images/chocolateCake.jpg';
-import classicCake from '../../images/classicCake.jpg';
 import bigPhoto from '../../images/bigPhoto.jpg';
 import smallPhoto1 from '../../images/smallPhoto1.jpg';
 import smallPhoto2 from '../../images/smallPhoto2.jpg';
-import redCake from '../../images/Frame56.jpg';
+import RedVelvet from '../../images/main_page/our_desserts/red_cake.jpg';
 import { useState } from 'react';
 import { ProductCard } from '../../components/productCard/ProductCard';
+import { SubHeader } from '../../components/SubHeader/SubHeader';
+import Napoleon from '../../images/main_page/our_desserts/napoleon.jpg';
+import Choco from '../../images/main_page/our_desserts/chokolate_sausage.jpg';
 
 export const Itempage = () => {
   const [amountProduct, setAmountProduct] = useState(1);
 
   return (
     <>
-      <div className={classes.categories_container}>
-        <div className={classes.categories}>
-          <div className={`${classes.category__card} ${classes.category_bisquit}`}>
-            <div className={classes.category__Cake}>
-              <img src={bisquitCake} alt='bisquitCake' />
-            </div>
-            <p> Бісквітні </p>
-          </div>
-
-          <div className={`${classes.category__card} ${classes.category_firm}`}>
-            <div className={classes.category__Cake}>
-              <img src={firmCake} alt='firmCake' />
-            </div>
-            <p> Фірмові </p>
-          </div>
-
-          <div className={`${classes.category__card} ${classes.category_cheeze}`}>
-            <div className={classes.category__Cake}>
-              <img src={cheezeCake} alt='cheezeCake' />
-            </div>
-            <p> Чізкейки </p>
-          </div>
-
-          <div className={`${classes.category__card} ${classes.category_chocolate}`}>
-            <div className={classes.category__Cake}>
-              <img src={chocolateCake} alt='chocolateCake' />
-            </div>
-            <p> Шоколадні </p>
-          </div>
-
-          <div className={`${classes.category__card} ${classes.category_classic}`}>
-            <div className={classes.category__Cake}>
-              <img src={classicCake} alt='classicCake' />
-            </div>
-            <p> Класичні </p>
-          </div>
-        </div>
-      </div>
-
+      <SubHeader />
       <div className={classes.main}>
         <div className={classes.main__container}>
           <div className={classes.main__photos}>
@@ -160,9 +120,9 @@ export const Itempage = () => {
 
       <div className={classes.recomendations}>
         <div className={classes.recomendations_container}>
-          <ProductCard id={1} name={'Червоний оксамит'} price={'500 UAH'} url={redCake} />
-          <ProductCard id={2} name={'Червоний оксамит'} price={'500 UAH'} url={redCake} />
-          <ProductCard id={3} name={'Червоний оксамит'} price={'500 UAH'} url={redCake} />
+          <ProductCard id={1} name={'Червоний оксамит'} price={'500 UAH'} url={RedVelvet} />
+          <ProductCard id={2} name={'Наполеон'} price={'500 UAH'} url={Napoleon} />
+          <ProductCard id={3} name={'Шоколадна ковбаска'} price={'500 UAH'} url={Choco} />
         </div>
       </div>
     </>
