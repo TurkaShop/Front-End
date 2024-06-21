@@ -2,6 +2,7 @@ import css from "./footer.module.scss";
 import InstaIcon from "../../images/instaicon.svg";
 import LocationIcon from "../../images/locationicon.svg";
 import PhoneIcon from "../../images/phoneicon.svg";
+import { NavLink } from "react-router-dom";
 
 export const Footer = () => {
   return (
@@ -14,15 +15,15 @@ export const Footer = () => {
             <ul className={css.menu__list_left}>
               <p className={css.footer__subjects}>Меню</p>
               <li className={css.menu__item}>
-                <a href="index.html" className={css.footer__link}>
+                <NavLink to={'/cakes'} className={css.footer__link}>
                   Торти
-                </a>
+                </NavLink>
               </li>
 
               <li className={css.menu__item}>
-                <a href="index.html" className={css.footer__link}>
+                <NavLink to={'/bakery'} className={css.footer__link}>
                   Випічка
-                </a>
+                </NavLink>
               </li>
             </ul>
           </div>
@@ -37,9 +38,9 @@ export const Footer = () => {
               </li>
 
               <li className={css.about__item}>
-                <a href="index.html" className={css.footer__link}>
+                <NavLink to={'/workwithus'} className={css.footer__link}>
                   Співпраця
-                </a>
+                </NavLink>
               </li>
 
               <li className={css.about__item}>
@@ -54,9 +55,9 @@ export const Footer = () => {
             <ul className={css.menu__list_right}>
               <p className={css.footer__subjects}>Покупцям</p>
               <li className={css.forcustomers__item}>
-                <a href="index.html" className={css.footer__link}>
+                <NavLink to={'contacts'} className={css.footer__link}>
                   Контакти
-                </a>
+                </NavLink>
               </li>
 
               <li className={css.forcustomers__item}>
