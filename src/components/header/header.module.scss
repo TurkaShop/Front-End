@@ -20,6 +20,7 @@
     margin-left: 122px;
   }
 }
+
 .header__container {
   display: flex;
   align-items: center;
@@ -95,17 +96,17 @@
 }
 
 .header__loup {
-  background-image: url(../../images/header/gg_search.svg);
+  background-image: url('../../images/header/gg_search.svg');
   width: 100%;
   object-fit: cover;
 }
 
 .header__cart {
-  background-image: url(../../images/header/lets-icons_basket-alt-3-light.svg);
+  background-image: url('../../images/header/lets-icons_basket-alt-3-light.svg');
 }
 
 .header__login {
-  background-image: url(../../images/header/material-symbols_person-outline.svg);
+  background-image: url('../../images/header/material-symbols_person-outline.svg');
 }
 
 .header__text_item {

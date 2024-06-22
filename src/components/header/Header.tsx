@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import css from "./header.module.scss";
 import Logo from '../../images/header/logo.svg';
+import burger from '../../images/header/burger.svg';
 
 export const Header = () => {
   return (
@@ -55,7 +56,7 @@ export const Header = () => {
       </ul>
       <NavLink to="/" className={css.burger}>
         <img
-          src={"src/images/header/burger.svg"}
+          src={burger}
           alt="burger menu"
           className={css.burger__img}
         />
